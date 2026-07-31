@@ -213,17 +213,17 @@
           class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between">
           <div class="p-6">
             <div class="flex items-center justify-between mb-4">
-              <span class="bg-slate-950 text-white text-xs font-bold px-3 py-1 rounded-md">#1</span>
-              <span class="text-emerald-700 text-xs font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
+              <span class="bg-slate-950 text-white text-base font-bold px-3 py-1 rounded-md">#1</span>
+              <span class="text-emerald-700 text-base font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
             </div>
-            <h3 class="text-lg font-extrabold text-gray-950 mb-2">Trạm Studio 1</h3>
-            <p class="text-gray-900 font-medium text-base leading-relaxed mb-4">
+            <h3 class="text-2xl font-extrabold text-gray-950 mb-2">Trạm Studio 1</h3>
+            <p class="text-gray-900 font-medium text-xl leading-relaxed mb-4">
               <i class="fa-solid fa-location-dot text-amber-600 mr-1.5"></i>
               19 Đ. 816, Long Trường, Hồ Chí Minh
             </p>
 
             <!-- KHỐI LƯU Ý -->
-            <div class="grid grid-rows-1 md:grid-rows-2 gap-3">
+            <div class="grid grid-rows-1 md:grid-rows-1 gap-3">
               <!-- Cảnh báo cấm -->
               <div class="bg-red-50 border border-red-200 text-red-900 p-3 rounded-xl text-xs flex items-start gap-2">
                 <i class="fa-solid fa-square-minus text-base mt-0.5 shrink-0 text-red-600"></i>
@@ -254,7 +254,7 @@
             </div>
           </div>
           <!-- Đã sửa nút Xem Bản Đồ -->
-          <div class="px-6 pb-6 mt-auto flex justify-center">
+          <div class="px-6 pb-6 mt-auto flex items-center justify-between gap-3">
             <a href="https://maps.app.goo.gl/Socrsf3Hb88S9gsj9" target="_blank"
               class="inline-flex items-center justify-center w-fit bg-slate-950 hover:bg-slate-800 text-white font-bold px-8 py-2.5 rounded-xl text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
               <i class="fa-solid fa-map-location-dot mr-2"></i> Xem Bản Đồ Trạm 1
@@ -264,22 +264,22 @@
 
         <!-- TRAM 2 -->
         <div
-          class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between relative ring-1 ring-amber-500/40">
+          class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between relative ring-1 ring-amber-500/10">
           <div class="p-6">
             <div class="flex items-center justify-between mb-4">
-              <span class="bg-slate-950 text-white text-xs font-bold px-3 py-1 rounded-md">#2</span>
-              <span class="text-emerald-700 text-xs font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
+              <span class="bg-slate-950 text-white text-base font-bold px-3 py-1 rounded-md">#2</span>
+              <span class="text-emerald-700 text-base font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
             </div>
 
-            <h3 class="text-lg font-extrabold text-gray-950 mb-2">Trạm Studio 2</h3>
+            <h3 class="text-2xl font-extrabold text-gray-950 mb-2">Trạm Studio 2</h3>
 
-            <p class="text-gray-900 font-medium text-base leading-relaxed mb-4">
+            <p class="text-gray-900 font-medium text-xl leading-relaxed mb-4">
               <i class="fa-solid fa-location-dot text-amber-600 mr-1.5"></i>
               8 Đ. Trương Văn Thành, Quận 9, Tăng Nhơn Phú, Hồ Chí Minh
             </p>
 
             <!-- KHỐI LƯU Ý -->
-            <div class="grid grid-rows-1 md:grid-rows-2 gap-3">
+            <div class="grid grid-rows-1 md:grid-rows-1 gap-3">
               <!-- Cảnh báo / Lưu Ý Đỗ Xe & Cấm Rẽ Trái -->
               <div class="bg-red-50 border border-red-200 text-red-900 p-3 rounded-xl text-xs flex items-start gap-2">
                 <i class="fa-solid fa-square-minus text-base mt-0.5 shrink-0 text-red-600"></i>
@@ -319,11 +319,20 @@
           </div>
 
           <!-- Đã sửa nút Xem Bản Đồ -->
-          <div class="px-6 pb-6 mt-auto flex justify-center">
+          <div class="px-6 pb-6 mt-auto flex items-center justify-between gap-3">
+            <!-- Nút Xem Bản Đồ (Giữ nguyên kích thước/code cũ của bạn) -->
             <a href="https://maps.app.goo.gl/Yz5AGdDWBH99znQD7" target="_blank"
               class="inline-flex items-center justify-center w-fit bg-slate-950 hover:bg-slate-800 text-white font-bold px-8 py-2.5 rounded-xl text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
               <i class="fa-solid fa-map-location-dot mr-2"></i> Xem Bản Đồ Trạm 2
             </a>
+
+            <!-- Nút Đặt Cà Phê nằm sát góc phải, tinh tế, cùng hàng -->
+            <!-- Nút Đặt Cà Phê -->
+            <button type="button" onclick="openCoffeeModal('Trạm Studio 2', '8 Đ. Trương Văn Thành, Quận 9, Tăng Nhơn Phú, TP.HCM', '0888468479')"
+  class="inline-flex items-center justify-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold px-4 py-2.5 rounded-xl text-sm transition-all duration-200 shadow-sm hover:shadow shrink-0">
+  <i class="fa-solid fa-mug-hot text-amber-600"></i> Đặt Cà Phê
+</button>
+
           </div>
         </div>
 
@@ -332,17 +341,17 @@
           class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col justify-between relative ring-1 ring-amber-500/10">
           <div class="p-6">
             <div class="flex items-center justify-between mb-4">
-              <span class="bg-slate-950 text-white text-xs font-bold px-3 py-1 rounded-md">#3</span>
-              <span class="text-emerald-700 text-xs font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
+              <span class="bg-slate-950 text-white text-base font-bold px-3 py-1 rounded-md">#3</span>
+              <span class="text-emerald-700 text-base font-bold"><i class="fa-solid fa-circle text-[10px] mr-1"></i> Hoạt Động 24/7</span>
             </div>
-            <h3 class="text-lg font-extrabold text-gray-950 mb-2">Trạm Studio 3</h3>
-            <p class="text-gray-900 font-medium text-base leading-relaxed mb-4">
+            <h3 class="text-2xl font-extrabold text-gray-950 mb-2">Trạm Studio 3</h3>
+            <p class="text-gray-900 font-medium text-xl leading-relaxed mb-4">
               <i class="fa-solid fa-location-dot text-amber-600 mr-1.5"></i>
               Số 9 Đường N5, Khu Dân Cư Bình Nguyên, Đông Hòa, Hồ Chí Minh
             </p>
 
             <!-- KHỐI LƯU Ý -->
-            <div class="grid grid-rows-1 md:grid-rows-2 gap-3">
+            <div class="grid grid-rows-1 md:grid-rows-1 gap-3">
               <div
                 class="bg-amber-50 border border-amber-300 text-amber-950 p-3 rounded-xl text-xs flex items-start gap-2 h-fit">
                 <i class="fa-solid fa-circle-info text-base mt-0.5 shrink-0 text-amber-700"></i>
@@ -372,15 +381,15 @@
           </div>
 
           <!-- Đã sửa nút Xem Bản Đồ -->
-          <div class="px-6 pb-6 mt-auto flex justify-center">
+          <div class="px-6 pb-6 mt-auto flex items-center justify-between gap-3">
             <a href="https://maps.app.goo.gl/T1FUPoZZZTuBcmmi9" target="_blank"
               class="inline-flex items-center justify-center w-fit bg-slate-950 hover:bg-slate-800 text-white font-bold px-8 py-2.5 rounded-xl text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
               <i class="fa-solid fa-map-location-dot mr-2"></i> Xem Bản Đồ Trạm 3
             </a>
           </div>
         </div>
-
       </div>
+
     </section>
 
     <!-- TIỆN ÍCH TẠI TRAM STUDIO (AMENITIES SECTION) -->
@@ -472,5 +481,326 @@
   </footer>
 
 </body>
+
+
+<!-- POPUP CHỌN MÓN (Modal 1) -->
+<div id="coffeeModal"
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs hidden p-4">
+  <div
+    class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-2xl overflow-hidden flex flex-col max-h-[90vh]">
+    <!-- Header Popup -->
+    <div class="flex items-center justify-between px-6 py-4 bg-slate-950 text-white">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-mug-hot text-amber-400"></i>
+        <h3 class="font-extrabold text-base">Menu Đặt Nước / Cà Phê</h3>
+      </div>
+      <button onclick="closeCoffeeModal()" class="text-gray-400 hover:text-white p-1 rounded-lg transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Body Chia 2 cột -->
+    <div class="p-4 md:p-6 overflow-y-auto grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 bg-gray-50/50">
+      <!-- Cột Trái: Chọn Menu -->
+      <div class="bg-white p-3.5 rounded-xl border border-gray-200 flex flex-col">
+        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2.5">1. Chọn món bên dưới:</p>
+        <div id="menuList" class="space-y-2 overflow-y-auto max-h-[300px] pr-1">
+          <!-- Item sinh tự động qua JS -->
+        </div>
+      </div>
+
+      <!-- Cột Phải: Giỏ Hàng & Nhập SĐT -->
+      <div class="bg-white p-3.5 rounded-xl border border-gray-200 flex flex-col justify-between space-y-3">
+        <div>
+          <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">2. Món Đã Chọn:</p>
+          <div id="cartItems" class="space-y-2 text-xs text-gray-700 min-h-[120px] max-h-[180px] overflow-y-auto pr-1">
+            <span class="text-gray-400 italic">Chưa có món nào được chọn.</span>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-2.5 space-y-2.5">
+          <!-- Ô nhập SĐT người đặt -->
+          <div>
+            <label class="block text-[11px] font-bold uppercase text-gray-700 mb-1">SĐT người đặt <span class="text-red-500">*</span></label>
+            <input type="tel" id="customerPhone" placeholder="Nhập SĐT (VD: 0912345678)" class="w-full bg-gray-50 border border-gray-300 rounded-lg px-3 py-1.5 text-xs text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <p id="phoneError" class="text-[10px] text-red-500 mt-1 hidden">Số điện thoại không hợp lệ (Phải đúng 10 số
+              và thuộc nhà mạng VN).</p>
+          </div>
+
+          <!-- Tổng số ly & Tổng tiền -->
+          <div class="flex justify-between items-center text-xs text-gray-700 font-bold">
+            <span>Tổng số lượng:</span>
+            <span id="cartTotalCups" class="text-gray-950">0 ly</span>
+          </div>
+          <div class="flex justify-between items-center font-extrabold text-sm text-gray-950">
+            <span>Tổng tiền:</span>
+            <span id="cartTotal" class="text-amber-600">0đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Gửi Zalo -->
+    <div class="p-4 bg-white border-t border-gray-200 flex gap-3">
+      <button onclick="closeCoffeeModal()" class="w-1/3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-2.5 rounded-xl text-xs transition">
+        Đóng
+      </button>
+      <button onclick="proceedToReviewOrder()" class="w-2/3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl text-xs transition shadow-md flex items-center justify-center gap-2">
+        <i class="fa-solid fa-paper-plane"></i> Gửi Đơn Qua Zalo
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP XÁC NHẬN & COPY (Modal 2) -->
+<div id="reviewModal"
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs hidden p-4">
+  <div class="bg-white rounded-2xl shadow-2xl border border-gray-200 w-full max-w-md overflow-hidden flex flex-col">
+    <!-- Header Popup 2 -->
+    <div class="flex items-center justify-between px-6 py-4 bg-slate-950 text-white">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-clipboard-check text-amber-400"></i>
+        <h3 class="font-extrabold text-base">Xác Nhận Đơn Hàng</h3>
+      </div>
+      <button onclick="closeReviewModal()" class="text-gray-400 hover:text-white p-1 rounded-lg transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Body Popup 2 -->
+    <div class="p-6 space-y-4">
+      <div>
+        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1.5">Nội dung đơn hàng (Bấm nút để copy
+          nhanh):</p>
+        <textarea id="reviewTextArea" readonly class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 text-xs text-gray-800 font-mono h-[140px] resize-none focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+      </div>
+
+      <!-- Nút Copy -->
+      <button onclick="copyOrderText()" id="copyBtn" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+        <i class="fa-solid fa-copy"></i> <span id="copyBtnText">Copy Nội Dung Đơn Hàng</span>
+      </button>
+
+      <!-- Ô thông báo -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-900 leading-relaxed">
+        <p class="font-semibold">Bạn hãy copy danh sách trên và gửi trong Zalo của quán cà phê. Nếu chúng tôi không rep
+          tin nhắn trong vòng 3 phút, xin bạn gọi điện trực tiếp.</p>
+      </div>
+    </div>
+
+    <!-- Footer Popup 2 -->
+    <div class="p-4 bg-gray-50 border-t border-gray-200 flex gap-3">
+      <button onclick="closeReviewModal()" class="w-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2.5 rounded-xl text-xs transition">
+        Đóng
+      </button>
+      <button onclick="openZaloApp()" class="w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl text-xs transition shadow-md flex items-center justify-center gap-2">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Mở Zalo Quán
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const coffeeMenu = [
+    { name: "Americano", price: 30000 },
+    { name: "Cappuccino", price: 40000 },
+    { name: "Macchiato", price: 37500 },
+    { name: "Espresso", price: 30000 },
+    { name: "Latte", price: 45000 },
+    { name: "Iced Americano", price: 35000 },
+    { name: "Iced Latte", price: 47500 },
+    { name: "Iced Mocha", price: 52500 },
+    { name: "Cold Brew", price: 45000 },
+    { name: "Green Tea", price: 32500 },
+    { name: "Caramel Macchiato", price: 52500 },
+    { name: "Matcha Latte", price: 50000 }
+  ];
+
+  let cart = {};
+  let currentStationInfo = { name: '', address: '', phone: '' };
+  let finalOrderText = '';
+
+  function openCoffeeModal(stationName, stationAddress, stationPhone) {
+    currentStationInfo = { name: stationName, address: stationAddress, phone: stationPhone };
+    cart = {};
+    document.getElementById('customerPhone').value = '';
+    document.getElementById('phoneError').classList.add('hidden');
+    renderMenu();
+    updateCartUI();
+    document.getElementById('coffeeModal').classList.remove('hidden');
+  }
+
+  function closeCoffeeModal() {
+    document.getElementById('coffeeModal').classList.add('hidden');
+  }
+
+  function closeReviewModal() {
+    document.getElementById('reviewModal').classList.add('hidden');
+  }
+
+  function renderMenu() {
+    const container = document.getElementById('menuList');
+    container.innerHTML = '';
+    coffeeMenu.forEach((item, index) => {
+      const div = document.createElement('div');
+      div.className = "flex items-center justify-between p-2 bg-gray-50 rounded-lg border border-gray-200";
+      div.innerHTML = `
+        <div class="pr-2">
+          <p class="text-xs font-bold text-gray-900">${item.name}</p>
+          <p class="text-[11px] text-amber-600 font-semibold">${item.price.toLocaleString('vi-VN')}đ</p>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button type="button" onclick="updateQuantity(${index}, -1)" class="w-6 h-6 bg-white hover:bg-gray-200 text-gray-800 rounded border border-gray-300 font-bold text-xs flex items-center justify-center transition">-</button>
+          <span id="qty-${index}" class="text-xs font-bold w-4 text-center">${cart[index] || 0}</span>
+          <button type="button" onclick="updateQuantity(${index}, 1)" class="w-6 h-6 bg-amber-500 hover:bg-amber-600 text-white rounded font-bold text-xs flex items-center justify-center transition">+</button>
+        </div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  function updateQuantity(index, change) {
+    if (!cart[index]) cart[index] = 0;
+    cart[index] += change;
+    if (cart[index] < 0) cart[index] = 0;
+    if (cart[index] === 0) delete cart[index];
+    
+    document.getElementById(`qty-${index}`).innerText = cart[index] || 0;
+    updateCartUI();
+  }
+
+  function updateCartUI() {
+    const cartContainer = document.getElementById('cartItems');
+    cartContainer.innerHTML = '';
+    let total = 0;
+    let totalCups = 0;
+    let hasItem = false;
+
+    for (let index in cart) {
+      if (cart[index] > 0) {
+        hasItem = true;
+        const item = coffeeMenu[index];
+        const qty = cart[index];
+        const itemTotal = item.price * qty;
+        total += itemTotal;
+        totalCups += qty;
+
+        const row = document.createElement('div');
+        row.className = "flex justify-between items-center bg-amber-50/60 p-2 rounded border border-amber-200 text-xs";
+        row.innerHTML = `<span class="font-bold text-gray-900">${item.name} (x${qty})</span> <span class="font-extrabold text-amber-700">${itemTotal.toLocaleString('vi-VN')}đ</span>`;
+        cartContainer.appendChild(row);
+      }
+    }
+
+    if (!hasItem) {
+      cartContainer.innerHTML = '<div class="h-full flex items-center justify-center text-gray-400 italic py-6">Chưa có món nào được chọn.</div>';
+    }
+
+    document.getElementById('cartTotalCups').innerText = totalCups + ' ly';
+    document.getElementById('cartTotal').innerText = total.toLocaleString('vi-VN') + 'đ';
+  }
+
+  // Hàm kiểm tra số điện thoại chuẩn Việt Nam (10 số, bắt đầu bằng đầu số hợp lệ của các nhà mạng lớn: 03, 05, 07, 08, 09)
+  function isValidVietnamesePhoneNumber(phone) {
+    const vnPhoneRegex = /^(03|05|07|08|09)[0-9]{8}$/;
+    return vnPhoneRegex.test(phone);
+  }
+
+  function proceedToReviewOrder() {
+    let orderKeys = Object.keys(cart).filter(k => cart[k] > 0);
+    if (orderKeys.length === 0) {
+      alert("Vui lòng chọn ít nhất một món trước khi gửi đơn hàng!");
+      return;
+    }
+
+    const customerPhone = document.getElementById('customerPhone').value.trim();
+    const phoneErrorEl = document.getElementById('phoneError');
+
+    if (!customerPhone) {
+      phoneErrorEl.innerText = "Vui lòng nhập số điện thoại của bạn!";
+      phoneErrorEl.classList.remove('hidden');
+      document.getElementById('customerPhone').focus();
+      return;
+    }
+
+    if (!isValidVietnamesePhoneNumber(customerPhone)) {
+      phoneErrorEl.innerText = "Số điện thoại không hợp lệ! SĐT phải có 10 chữ số và thuộc nhà mạng Việt Nam (VD: 03, 05, 07, 08, 09).";
+      phoneErrorEl.classList.remove('hidden');
+      document.getElementById('customerPhone').focus();
+      return;
+    } else {
+      phoneErrorEl.classList.add('hidden');
+    }
+
+    let text = `${currentStationInfo.name} - ${currentStationInfo.address}\n`;
+    text += `SĐT người đặt: ${customerPhone}\n`;
+    text += `--- ĐƠN ĐẶT NƯỚC/CÀ PHÊ ---\n`;
+    
+    let total = 0;
+    let totalCups = 0;
+    orderKeys.forEach(index => {
+      let item = coffeeMenu[index];
+      let qty = cart[index];
+      let subTotal = item.price * qty;
+      total += subTotal;
+      totalCups += qty;
+      text += `- ${item.name} (x${qty}): ${subTotal.toLocaleString('vi-VN')}đ\n`;
+    });
+    text += `Tổng số lượng: ${totalCups} ly\n`;
+    text += `Tổng tiền: ${total.toLocaleString('vi-VN')}đ\n`;
+    text += `Giao tận nơi giúp mình nhé!`;
+
+    finalOrderText = text;
+
+    const textArea = document.getElementById('reviewTextArea');
+    textArea.value = finalOrderText;
+
+    document.getElementById('copyBtnText').innerText = "Copy Nội Dung Đơn Hàng";
+    document.getElementById('copyBtn').classList.remove('bg-emerald-600', 'hover:bg-emerald-700');
+    document.getElementById('copyBtn').classList.add('bg-amber-500', 'hover:bg-amber-600');
+
+    closeCoffeeModal();
+    document.getElementById('reviewModal').classList.remove('hidden');
+  }
+
+  function copyOrderText() {
+    const textArea = document.getElementById('reviewTextArea');
+    textArea.select();
+    textArea.setSelectionRange(0, 99999);
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(finalOrderText).then(() => {
+        showCopySuccess();
+      }).catch(() => {
+        fallbackCopyExecute(textArea);
+      });
+    } else {
+      fallbackCopyExecute(textArea);
+    }
+  }
+
+  function fallbackCopyExecute(textArea) {
+    try {
+      let successful = document.execCommand('copy');
+      if (successful) {
+        showCopySuccess();
+      } else {
+        alert("Thiết bị không hỗ trợ tự động copy, bạn vui lòng giữ ngón tay vào ô text để copy thủ công nhé!");
+      }
+    } catch (err) {
+      alert("Bạn vui lòng tự bôi đen và copy nội dung trong ô text!");
+    }
+  }
+
+  function showCopySuccess() {
+    document.getElementById('copyBtnText').innerText = "Đã Copy Thành Công!";
+    document.getElementById('copyBtn').classList.remove('bg-amber-500', 'hover:bg-amber-600');
+    document.getElementById('copyBtn').classList.add('bg-emerald-600', 'hover:bg-emerald-700');
+  }
+
+  function openZaloApp() {
+    const zaloPhone = "0888468479";
+    const zaloUrl = `https://zalo.me/${zaloPhone}`;
+    window.open(zaloUrl, '_blank');
+  }
+  </script>
 
 </html>
